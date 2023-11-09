@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Model/Styles/estilos.css">
+    <title>Pokemon</title>
+</head>
+<body>
+    <script src="../Control/Functions/visibility.js"></script>
+    <script src="../Control/Functions/login.js"></script>
+    <div class="header">
+        <img src="../Model/Img/logo.png" class="logo">
+        <ul class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="register.html">Registrarme</a>
+        </ul>
+    </div>
+    <div class="main">
+        <input type="button" value="Ver mi Pokedex" id="btn" onclick="visibility()">
+        <div class="login" id="login">
+            <label for="username">Username</label>
+            <input type="text" id="username" autocomplete="off" required>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" autocomplete="off" required>
+            <input type="button" value="ingresar" id="button" onclick="valLogin()">
+        </div>
+        <div class="pokedex">
+            <div class="dataUser">
+                <p id="infoUser"></p>
+            </div>
+            <div class="dataPokemon">
+                <p id="infoPokemon"></p>
+            </div>
+        </div>
+        <a download="JuegoPokemon.txt" href="../Model/Game/JuegoPokemon.txt">Desgargar juego de Pokemon</a>
+    </div>
+</body>
+</html>
